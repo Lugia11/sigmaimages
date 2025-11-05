@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Showing image with a click</h2>
+    <button id="show-image-button">Show Image</button>
+    <img id="my-image" 
+         src=
+"https://www.reddit.com/r/willwood/comments/17n201h/give_me_all_of_your_sigma_wood_images/" 
+         style="display: none;">
+    <script>
+        const showImageButton = document.getElementById("show-image-button");
+        const myImage = document.getElementById("my-image");
+        showImageButton.addEventListener("click", () => {
+            myImage.style.display = "block";
+        });
+    </script>
